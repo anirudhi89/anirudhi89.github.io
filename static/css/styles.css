@@ -1,0 +1,256 @@
+@font-face{
+    font-family: Netflix;
+    src: url('../fonts/NetflixSans_W_Rg.woff2'), url('../fonts/NetflixSans_W_Rg.woff2') format('woff2');
+}
+@font-face{
+    font-family: NetflixMD;
+    src: url('../fonts/NetflixSans_W_Md.woff2'), url('../fonts/NetflixSans_W_MD.woff2') format('woff2');
+}
+
+* {
+    font-family: Netflix;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: 125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 10;
+    /* left: 50%; */
+    /* right: 30%; */
+    top: 90%;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+.modal {
+    display: block; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    z-index: 1; /* Sit on top */
+    /* left: auto; */
+    /* transform-origin: 50% 12.5%; */
+    top: 2px;
+    /* width: 925.11px; Full width */
+    min-width: 850px;
+    max-width: 850px;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0);  */
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4); 
+    /* Black w/ opacity */
+}
+
+.mediaplayer {
+    width: 100%;
+    height: 553.19;
+    align-items: center;
+
+}
+
+.mediaimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 553.19;
+    /* width: 50%; */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #181818;
+    /* margin: 15% auto;  15% from the top and centered */
+    padding: 0 3em;
+    /* border: 1px solid #888; */
+    /* width: 80%; 
+    /* Could be more or less, depending on screen size */ 
+}
+
+p, b, h3 {
+    font-family: Netflix;
+    color: white;
+}
+
+.info1 {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    /* color: #aaa; */
+    float: right;
+    padding-top: 35px;
+    /* font-size: 24px;
+    font-weight: bold; */
+    /* 36 x 40.19 */
+
+}
+
+.close:hover, .close:focus { 
+    color: black;
+    /* text-decoration: none; */
+    cursor: pointer;
+} 
+
+/* svg {
+    float: right;
+} */
+
+svg {
+    margin-left: 0.25em;
+}
+
+.svg {
+    white-space: no-wrap; 
+    color: white; 
+    display: inline-flex;
+}
+
+path { fill: white; }
+
+
+/* modal */
+
+.skills {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0.5em 0.5em 0.5em 0;
+    word-break: break-word;
+    color: white;
+}
+
+
+.previewModal--detailsMetadata-left {
+    float: left;
+    width: 55%;
+}
+.previewModal--detailsMetadata-center {
+    float:center;
+    width: 100%;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+
+.previewModal--detailsMetadata-right {
+    float: right;
+    width: 40%;
+}
+
+.videoMetadata{
+    display:inline;
+}
+
+.tags-label{
+    color:#777777;
+}
+
+.match-score {
+    color: #46d369;
+    font-family: NetflixMD;
+}
+
+.info-container {
+    display: grid;
+    width: 100%;
+}
+
+#expheader {
+    float: left;
+    width: 50%;
+}
+
+#experience {
+    padding: 0px;
+    float: right;
+    width: 50%;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    position: relative;
+    background-color: rgb(36, 36, 36);
+    padding: 0.5em 0.5em;
+    color: white;
+    cursor: pointer;
+    border: 0.1em solid rgb(77, 77, 77);
+    border-radius: 0.2em;
+}
+
+option {
+    font-weight: bold;
+}
+
+body {
+    background: url("../imgs/bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.episode {
+    display: inline-block;
+}
+
+.titleCard-title_index {
+    width:28px;
+    display: inline-flex;
+    float:left;
+}
+.titleCard-imageWrapper{
+    /* display: table-cell; */
+    display: inline-flex;
+    /* image-orientation: center; */
+    width:100px;
+    float: center;
+
+
+}
+.titleCardList--metadataWrapper {
+    width:600px;
+    display: inline-flex;
+    /* display: table-cell; */
+    float:right;
+
+}
+
+
+hr {
+    background-color: #404040;
+}
