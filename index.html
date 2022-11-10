@@ -1,7 +1,369 @@
-<html>
-    <head>
-    </head>
-    <body>
-        <h1>This website is primarily used for hosting projects.</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh Netflix</title><link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+<div id="bg">
+    <div class="popupmodal">        
+        
+        <div id="snackbar">I look better in full-screen</div>
+        
+
+        
+        </script>
+    </div>
+    <div id = "mymodal" class="modal">
+        <div class="modal-content">
+            <div class="close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard" data-uia="previewModal-closebtn" role="button" aria-label="close" tabindex="0">
+                    <path fill-rule="evenodd" stroke="currentColor" clip-rule="evenodd" d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z" fill="currentColor">
+                    </path>
+                </svg>
+            </div>
+            <div class="detail-container">
+                <div class="mediaplayer">
+                    <img class = "mediaimg" src="static/imgs/nflxbg.png" alt="">
+                </div>
+                <div class="info1">
+                    <div>
+                        <!-- two grids: flex left and right -->
+                        <div class="previewModal--detailsMetadata-left">
+                            <div>
+                                <div class="videoMetadata">
+                                    <p>
+                                        <span class="match-score">100% Match</span>
+                                        <span>Class of 2024</span>
+                                        <span class="maturity-number">TV-MA</span>
+                                        <span>3 seasons</span>
+                                        <span class="player-feature-badge">HD</span>
+                                    </p>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="supplemental-message svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-top-10-badge" style="color: rgb(229, 9, 20);">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 2C2.44772 2 2 2.44772 2 3V21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21V3C22 2.44772 21.5523 2 21 2H3ZM17.2299 10.8934C16.6125 10.4971 15.8913 10.2996 15.0673 10.2996C14.2444 10.2996 13.5231 10.4971 12.9056 10.8934C12.2881 11.2905 11.8114 11.8536 11.4762 12.5839C11.1411 13.3149 10.9735 14.1695 10.9735 15.1493C10.9735 16.1383 11.1411 16.9957 11.4762 17.7221C11.8114 18.4478 12.2881 19.0091 12.9056 19.4052C13.5231 19.8014 14.2444 20 15.0673 20C15.8913 20 16.6125 19.8014 17.2299 19.4052C17.8475 19.0091 18.3242 18.4478 18.6594 17.7221C18.9945 16.9957 19.1612 16.1383 19.1612 15.1493C19.1612 14.1695 18.9945 13.3149 18.6594 12.5839C18.3242 11.8536 17.8475 11.2905 17.2299 10.8934ZM9.47922 19.7994V10.3263L4.92658 11.4351V13.2656L7.20991 12.6774V19.7994H9.47922ZM13.7606 12.9513C14.0767 12.4298 14.5117 12.1701 15.0673 12.1701C15.6239 12.1701 16.0589 12.4298 16.3751 12.9513C16.6913 13.4718 16.8489 14.2058 16.8489 15.1493C16.8489 16.0938 16.6913 16.8268 16.3751 17.3473C16.0589 17.8688 15.6239 18.1296 15.0673 18.1296C14.5117 18.1296 14.0767 17.8688 13.7606 17.3473C13.4442 16.8268 13.2868 16.0938 13.2868 15.1493C13.2868 14.2058 13.4442 13.4718 13.7606 12.9513ZM13.0737 4.19939C12.7285 4.06677 12.3485 4 11.9344 4C11.5194 4 11.1405 4.06677 10.7952 4.19939C10.4521 4.33122 10.1518 4.51771 9.89848 4.75622C9.64404 4.99367 9.44963 5.27379 9.312 5.59396C9.17437 5.91504 9.10556 6.26299 9.10556 6.63872C9.10556 7.01446 9.17437 7.36241 9.312 7.68349C9.44963 8.00352 9.64404 8.28286 9.89848 8.52136C10.1518 8.75974 10.4521 8.9453 10.7952 9.07792C11.1405 9.20976 11.5194 9.27745 11.9344 9.27745C12.3485 9.27745 12.7285 9.20976 13.0737 9.07792C13.4168 8.9453 13.7161 8.75974 13.9704 8.52136C14.2239 8.28286 14.4194 8.00352 14.557 7.68349C14.6947 7.36241 14.7635 7.01446 14.7635 6.63872C14.7635 6.26299 14.6947 5.91504 14.557 5.59396C14.4194 5.27379 14.2239 4.99367 13.9704 4.75622C13.7161 4.51771 13.4168 4.33122 13.0737 4.19939ZM8.75526 5.30869V4.12288H4V5.30869H5.63894V9.15457H7.11632V5.30869H8.75526ZM18.9904 4.3469C18.6683 4.19847 18.2893 4.12327 17.8484 4.12327H15.5101V9.15392H16.9855V7.70838H17.8484C18.2893 7.70838 18.6683 7.63318 18.9904 7.48384C19.3117 7.33541 19.5601 7.12483 19.7366 6.85484C19.9132 6.58578 20 6.26931 20 5.90845C20 5.55682 19.9132 5.24587 19.7366 4.97602C19.5601 4.70683 19.3117 4.49624 18.9904 4.3469ZM11.2392 5.39166C11.4387 5.27379 11.6701 5.21545 11.9344 5.21545C12.1988 5.21545 12.4302 5.27379 12.6297 5.39166C12.8292 5.50954 12.9849 5.67653 13.0955 5.89001C13.2072 6.10521 13.2632 6.35386 13.2632 6.63872C13.2632 6.92267 13.2072 7.17224 13.0955 7.38651C12.9849 7.60092 12.8292 7.76791 12.6297 7.88565C12.4302 8.00352 12.1988 8.062 11.9344 8.062C11.6701 8.062 11.4387 8.00352 11.2392 7.88565C11.0397 7.76791 10.8841 7.60092 10.7724 7.38651C10.6617 7.17224 10.6057 6.92267 10.6057 6.63872C10.6057 6.35386 10.6617 6.10521 10.7724 5.89001C10.8841 5.67653 11.0397 5.50954 11.2392 5.39166ZM16.9855 5.27195H17.6149C17.9252 5.27195 18.1515 5.32845 18.2913 5.43895C18.4309 5.54931 18.5017 5.70616 18.5017 5.90845C18.5017 6.11535 18.4309 6.27589 18.2913 6.38902C18.1515 6.50228 17.9252 6.55878 17.6149 6.55878H16.9855V5.27195Z" fill="rgb(229, 9, 20)">
+                                    </path>
+                                </svg>
+                                &nbsp; #1 in Candidates Today
+                            </div>
+                            <p>
+                                When an experienced software developer applies to Netflix's brand new internship program,
+                                equipped with prior internships, industry standard skills, self-paced coursework in cloud computing and distributed systems and a Netflix themed resume, 
+                                does he get the job?
+                            </p>
+                        </div>
+                        <div class="previewModal--detailsMetadata-center"> <br> </div>
+                        <div class="previewModal--detailsMetadata-right">
+                            <div class = "skills">
+                                <span class ="tags-label">Languages:</span>
+                                <span>Java,</span>
+                                <span>JavaScript/TypeScript,</span>
+                                <span>Python,</span>
+                                <span>C#,</span>
+                                <span>HTML,</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class = "skills">
+                                <span class ="tags-label">Frameworks:</span>
+                                <span>Node.js,</span>
+                                <span>Express,</span>
+                                <span>Mongoose,</span>
+                                <span>Spring Boot,</span>
+                                <span>Flask,</span>
+                                <span>.NET,</span>
+                                <span>React</span>
+                            </div>
+                            <div class = "skills">
+                                <span class ="tags-label">Developer Tools:</span>
+                                <span>Google Cloud Platform (GCP),</span>
+                                <span>Amazon Web Services (AWS),</span>
+                                <span>Firebase,</span>
+                                <span>Heroku,</span>
+                                <span>Git,</span>
+                                <span>MongoDB,</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'info-container'>
+                <div class="info-header">
+                    <!-- episodes/experience -->
+                    <h3 id = "expheader">Experience</h3>
+                    <select name="experience" id="experience">
+                        <option default value="ddn"><strong>SWE @ Non Profit</strong></option>
+                        <option value="upmc"><strong>SWE Intern</strong></option>
+                        <option value="swanson"><strong>Web Dev Intern</strong></option>
+                    </select>
+                </div>
+                <div class="episodesel">
+                    <div id="ddn">
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>0</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://desidancenetwork.org/" target="_blank">    
+                                    <img src="static/imgs/DDNLogo_FinalDeliverable_Color.png" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pilot</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Introduction: As a Software Engineer at a 
+                                            non-profit organization called the Desi Dance Network (DDN), 
+                                            I served as the lead engineer and was responsible for creating a full-stack web-based application portal, 
+                                            for over 3000+ users, and the corresponding data analysis. My contributions resulted in a 1300% increase in users.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>1</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://ekta.app/" target="_blank">    
+                                    <img src="static/imgs/ekta.png" alt="" height="60%" width="60%">
+                                </a>    
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Ekta</p>
+                                    <div class="titleCard-title_text">
+                                        <p><a href="https://ekta.app" target="_blank">Ekta</a> is the application portal my team built. 
+                                            Ekta currently has around 3000 active users, within just 1 month of launching.
+                                            The application was built using TypeScript across the stack. React was employed on the client side, and Node.js and Express on the server side.
+                                            We used MongoDB's cloud-hosted database, MongoDB Atlas, to store user information, while AWS S3 was used to store images and videos.
+                                            The entire application was deployed using Heroku.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>2</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://about.ekta.app/api.html" target="_blank">
+                                    <img src="static/imgs/dataanalytics.jpeg" alt="" height="100%" width="100%">
+                                </a>    
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>API & Data Analytics</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Using our REST API, we are currently working on 
+                                            powering interactive diagrams. I am responsible for creating 
+                                            REST API endpoints, and conducting the data analysis, using Google AppScript, Python and Pandas.
+                                            I serve as the lead engineer on the project, and report to 2 others.
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>3</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://desidancenetwork.org/" target="_blank">    
+                                    <img src="static/imgs/ddnlogo.jpeg" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>DDN Website</p>
+                                    <div class="titleCard-title_text">
+                                        <p>The <a href="https://desidancenetwork.com" target="_blank">Desi Dance Network</a>, or DDN, is the world's largest organization 
+                                            dedicated to to foster a community amongst artists engaged in competitive South Asian dance. 
+                                            I am responsible for creating and updating the website, including the DDN Store, using the Squarespace CMS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="upmc" hidden = "hidden">
+                        <div class="episode" >
+                            <div class="titleCard-title_index"><p>0</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://ctsi.pitt.edu" target="_blank">   
+                                    <img src="static/imgs/ctsi.png" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pilot</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Introduction: As a Software Engineering Intern at the Clinical and Translational Science Institute,
+                                            I worked with C#, ASP.NET and SQL Server for our core product, and JavaScript, Node.js, and Selenium for our test suite. Additionally, I got a lot of valuable experience working
+                                            with other technologies, such as Jira and Jenkins CI/CD, to name a few. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" >
+                            <div class="titleCard-title_index"><p>1</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://pittplusme.org/" target="_blank">    
+                                    <img src="static/imgs/ppm-uop-logo.svg" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pitt Plus Me</p>
+                                    <div class="titleCard-title_text">
+                                        <p>
+                                            <a href="https://pittplusme.org" target="_blank">Pitt Plus Me®</a> 
+                                            is a community of patients, volunteers, 
+                                            and researchers working together as partners in research 
+                                            and clinical trials to advance healthcare.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" >
+                            <div class="titleCard-title_index"><p>2</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://joinallofuspa.org/" target="_blank">    
+                                    <img src="static/imgs/allofus.jpeg" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>All of Us</p>
+                                    <div class="titleCard-title_text">
+                                        <p>
+                                            <a href="https://www.joinallofuspa.org/" target="_blank">All of Us</a>
+                                            is a biobank research program from the National Institutes of Health (NIH),
+                                            seeking one million or more people from across the U.S. I worked on admin and user portal 
+                                            enhancements. I was responsible for user and admin features, such as registration
+                                            text and email messaging (Twillio and SendGrid).
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" >
+                            <div class="titleCard-title_index"><p>3</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://pittplusme-discovery.org/" target="_blank">    
+                                    <img src="static/imgs/ppmd.png" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pitt Plus Me Discovery</p>
+                                    <div class="titleCard-title_text">
+                                        <p>
+                                            <a href="https://pittplusme-discovery.org/" target="_blank">Pitt+Me Discovery</a>
+                                            is a local precision medicine research program 
+                                            designed to help University of Pittsburgh and UPMC researchers 
+                                            discover how DNA affects health.
+                                            I worked primarily on the user and admin portal of the website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" >
+                            <div class="titleCard-title_index"><p>4</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <img src="static/imgs/qa.jpeg" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Quality Assurance</p>
+                                    <div class="titleCard-title_text">
+                                        <p>When I joined for the summer, my team had recently made the switch to a 
+                                            Test-Driven-Development (TDD) paradigm. I was responsible for automating 
+                                            our stage testing, resulting in a faster time to market. Using Selenium and Headless Chrome,
+                                            I was able to get an automated test running for sign-ups, email and text confirmations, etc. 
+                                            Additionally, I was able to configure a Cucumber Reports plugin that allowed for
+                                            a visual representation of each test, making it easier to spot any errors or bugs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <div id="swanson" hidden="hidden">
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>0</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <img src="static/imgs/pittswanson.svg" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pilot</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Introduction: Within a few weeks of teaching myself the basics of web development, I
+                                            managed to land an internship in web development. As my first internship ever, I joined my University's engineering department as a Web Development Intern.
+                                            Along the way, I gained exposure to a lot of new technologies. I made a lot of mistakes, learned from those mistakes, and it made me a better engineer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>1</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://pittengineering.com/holiday2021/" target="_blank">
+                                    <img src="static/imgs/holiday.jpeg" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Holiday Card</p>
+                                    <div class="titleCard-title_text">
+                                        <p>One of my responsibilities was to create an interactive holiday card for our students, faculty and alumni to look at.
+                                            You can check out the card <a href="https://pittengineering.com/holiday2021/" target="_blank">here!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>2</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <img src="static/imgs/episerver.png" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>CMS Migration</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Another one of my responsibilities was to manage the 
+                                            department-wide migration from Ektron Content Management System 
+                                            to Episerver Content Management System using Asana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div><p>Like what you see? I'd love to talk more! Please feel free to <a href="mailto:anirudh.iyer@outlook.come">reach out!</a></p></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="static/js/app.js"></script>
+</body>
 </html>
+
