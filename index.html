@@ -27,7 +27,7 @@
             </div>
             <div class="detail-container">
                 <div class="mediaplayer">
-                    <img class = "mediaimg" src="static/imgs/nflxbg.png" alt="">
+                    <img class = "mediaimg" width="90%" src="static/imgs/editedntflxbg.png" alt="">
                 </div>
                 <div class="info1">
                     <div>
@@ -36,8 +36,8 @@
                             <div>
                                 <div class="videoMetadata">
                                     <p>
-                                        <span class="match-score">100% Match</span>
-                                        <span>Class of 2024</span>
+                                        <span class="match-score">100% Match&nbsp;</span>
+                                        <span>&nbsp;Class of 2024&nbsp;</span>
                                         <span class="maturity-number">TV-MA</span>
                                         <span>3 seasons</span>
                                         <span class="player-feature-badge">HD</span>
@@ -73,11 +73,12 @@
                                 <span class ="tags-label">Frameworks:</span>
                                 <span>Node.js,</span>
                                 <span>Express,</span>
-                                <span>Mongoose,</span>
                                 <span>Spring Boot,</span>
                                 <span>Flask,</span>
-                                <span>.NET,</span>
-                                <span>React</span>
+                                <span>Selenium,</span>
+                                <span>ASP.NET,</span>
+                                <span>React,</span>
+                                <span>Tailwind</span>
                             </div>
                             <div class = "skills">
                                 <span class ="tags-label">Developer Tools:</span>
@@ -86,8 +87,8 @@
                                 <span>Firebase,</span>
                                 <span>Heroku,</span>
                                 <span>Git,</span>
-                                <span>MongoDB,</span>
-                                <span>SQL Server</span>
+                                <span>SQL (Postgres, SQL Server),</span>
+                                <span>NoSQL (MongoDB, Cloud Datastore, Google Cloud Storage, AWS S3)</span>
                             </div>
                         </div>
                     </div>
@@ -98,13 +99,80 @@
                     <!-- episodes/experience -->
                     <h3 id = "expheader">Experience</h3>
                     <select name="experience" id="experience">
-                        <option default value="ddn"><strong>SWE @ Non Profit</strong></option>
+                        <option default value="sap"><strong>SWE Intern @ SAP</strong></option>
+                        <option value="ddn"><strong>SWE @ Non Profit</strong></option>
                         <option value="upmc"><strong>SWE Intern</strong></option>
                         <option value="swanson"><strong>Web Dev Intern</strong></option>
                     </select>
                 </div>
                 <div class="episodesel">
-                    <div id="ddn">
+                    <div id="sap">
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>0</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://sap.com/" target="_blank">    
+                                    <img src="static/imgs/Logo_SAP.jpg" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pilot</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Introduction: As a Software Engineer Intern at a 
+                                            SAP, I work on the Global Industry and Value Advisory (IVA) team.
+                                            My current project is creating a Go-To-Market strategy application,
+                                            which is currently used by 30+ enterprises and our sales team. 
+                                            Currently, the project has a 5☆ rating from our clients.                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>1</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://www.youtube.com/watch?v=xt7ZkP-YrjU/" target="_blank">    
+                                    <img src="static/imgs/dvd.jpeg" alt="" height="100%" width="90%">
+                                </a>    
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Digital Value Discovery</p>
+                                    <div class="titleCard-title_text">
+                                        <p><a href="https://www.youtube.com/watch?v=xt7ZkP-YrjU" target="_blank">Digital Value Discovery</a> is the name of the web application
+                                            I work on. Through gamification, we aim to create personalized suggestions based on customer challenges and strategic priorities. The application was built using TypeScript across the stack. We use React and Aurelia on the client side, and Node.js and Express on the server side.
+                                            We used SAP's multi-model database, SAP HANA, to store user information, and have implemented SSO and IDP for authentication.
+                                            The application integrates multiple SAP products, such as VLM, and S/4 HANA, alongside external APIs (S&P 500 API) to generate metric-based recommendations for enterprises.
+                                            The entire application is deployed using SAP Business Technology Platform (BTP).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>2</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://about.ekta.app/api.html" target="_blank">
+                                    <img src="static/imgs/documentation.jpeg" alt="" height="100%" width="100%">
+                                </a>     
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Technical Documentation</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Additionally, I am also responsible for creating comprehensive technical documentation for our engineering team.
+                                            This has been an incredibly valuable learning experience for me as I'm able to
+                                            apply my technical knowledge to writing our wiki, enabling a knowledge transfer and 
+                                            help promote the project's maintainability.
+                                        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ddn" hidden = "hidden">
                         <div class="episode">
                             <div class="titleCard-title_index"><p>0</p></div>
                             <div class="titleCard-imageWrapper">
@@ -189,7 +257,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div id="upmc" hidden = "hidden">
                         <div class="episode" >
                             <div class="titleCard-title_index"><p>0</p></div>

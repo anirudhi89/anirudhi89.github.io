@@ -13,15 +13,15 @@ experiencesel.onchange = function() {
 }
 
 function getExperiencesList(value) {
+    document.getElementById(value).hidden = false;
+
+    document.getElementById('sap').hidden = true;
     document.getElementById('ddn').hidden = true;
     document.getElementById('upmc').hidden = true;
     document.getElementById('swanson').hidden = true;
-    document.getElementById(value).hidden = false;
 }
 
-
 // show fullscreen noti
-
 window.addEventListener("load", (event) => {
     var x = document.getElementById("snackbar");
     x.className = "show";
