@@ -11,6 +11,10 @@
     font-family: Netflix;
 }
 
+code {
+    font-family: monospace;
+}
+
 #snackbar {
     visibility: hidden;
     min-width: 250px;

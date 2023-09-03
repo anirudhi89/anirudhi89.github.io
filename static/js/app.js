@@ -1,3 +1,5 @@
+// Note: If you're reading this, please hire me :)
+
 var experiencesel = document.getElementById('experience');
 
 var tst = document.getElementById('tst');
@@ -13,7 +15,7 @@ experiencesel.onchange = function() {
 }
 
 function getExperiencesList(value) {
-
+    document.getElementById('workday').hidden = true;
     document.getElementById('sap').hidden = true;
     document.getElementById('ddn').hidden = true;
     document.getElementById('upmc').hidden = true;

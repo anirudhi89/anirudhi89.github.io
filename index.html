@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anirudh Netflix</title><link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
+    <title>Anirudh Netflix</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
@@ -37,9 +38,9 @@
                                 <div class="videoMetadata">
                                     <p>
                                         <span class="match-score">100% Match&nbsp;</span>
-                                        <span>&nbsp;Class of 2024&nbsp;</span>
-                                        <span class="maturity-number">TV-MA</span>
-                                        <span>3 seasons</span>
+                                        <span>| &nbsp;Class of 2024&nbsp; |</span>
+                                        <span class="maturity-number">TV-MA |</span>
+                                        <span>5 seasons |</span>
                                         <span class="player-feature-badge">HD</span>
                                     </p>
                                 </div>
@@ -53,8 +54,8 @@
                                 &nbsp; #1 in Candidates Today
                             </div>
                             <p>
-                                When an experienced software developer applies to Netflix's brand new internship program,
-                                equipped with prior internships, industry standard skills, self-paced coursework in cloud computing and distributed systems and a Netflix themed resume, 
+                                When an experienced software developer applies to Netflix's new grad program,
+                                equipped with industry standard skills, prior internships in distributed systems, <em>and</em> a Netflix themed resume, 
                                 does he get the job?
                             </p>
                         </div>
@@ -66,14 +67,12 @@
                                 <span>JavaScript/TypeScript,</span>
                                 <span>Python,</span>
                                 <span>C#,</span>
-                                <span>HTML,</span>
-                                <span>CSS</span>
+                                <span>HTML/CSS</span>
                             </div>
                             <div class = "skills">
                                 <span class ="tags-label">Frameworks:</span>
-                                <span>Node.js,</span>
-                                <span>Express,</span>
                                 <span>Spring Boot,</span>
+                                <span>Node.js,</span>
                                 <span>Flask,</span>
                                 <span>Selenium,</span>
                                 <span>ASP.NET,</span>
@@ -82,9 +81,9 @@
                             </div>
                             <div class = "skills">
                                 <span class ="tags-label">Developer Tools:</span>
+                                <span>Amazon Web Services (AWS)</span>
                                 <span>Google Cloud Platform (GCP),</span>
-                                <span>Amazon Web Services (AWS),</span>
-                                <span>Firebase,</span>
+                                <span>Docker/Kubernetes,</span>
                                 <span>Heroku,</span>
                                 <span>Git,</span>
                                 <span>SQL (Postgres, SQL Server),</span>
@@ -99,14 +98,127 @@
                     <!-- episodes/experience -->
                     <h3 id = "expheader">Experience</h3>
                     <select name="experience" id="experience">
+                        <option default value="workday"><strong>SDE Intern @ Workday</strong></option>
                         <option default value="sap"><strong>SWE Intern @ SAP</strong></option>
                         <option value="ddn"><strong>SWE @ Non Profit</strong></option>
-                        <option value="upmc"><strong>SWE Intern</strong></option>
+                        <option value="upmc"><strong>SWE Intern @ CTSI</strong></option>
                         <option value="swanson"><strong>Web Dev Intern</strong></option>
                     </select>
                 </div>
                 <div class="episodesel">
-                    <div id="sap">
+                    <div id="workday">
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>0</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="https://workday.com/" target="_blank">    
+                                    <img src="static/imgs/workday-logo.png" alt="" height="100%" width="100%">
+                                </a>
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Pilot</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Introduction: As a Software Development Engineer Intern at Workday, 
+                                            I worked on the Distributed Systems and Architecture group, known as Lodestar Engineering. Lodestar operated as a startup within Workday.
+                                            Lodestar aims to deliver a next generation platform to enable next generation applications. 
+                                            Our goal is to ship an entirely new product to Workday customers. 
+                                            As an intern, I worked extensively with Java, GraphQL, Amazon Web Services (EKS, ECS, EC2, Route53), Docker, and Kubernetes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode">
+                            <div class="titleCard-title_index"><p>1</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="#" target="_blank">    
+                                    <img src="#" alt="" height="100%" width="90%">
+                                </a>    
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Continuous Delivery</p>
+                                    <div class="titleCard-title_text">
+                                        <p>When I joined the team, our team was going through an infrastructure migration, Our team intended to migrate our deployment from Elastic Container Service (ECS) to Elastic Kubernetes Service (EKS).
+                                            My first task was to write a deploy script in bash that could be used to deploy our application to EKS. During this process, I was the sole engineer
+                                            in charge of the deployment process. I fielded requests from our product team, and occasionally our vice president of engineering, to deploy the latest version of our application.
+                                            As our product matured, we recognized the immediate need for an automated deployment pipeline.
+                                            <br> Using ArgoCD, Groovy, and Jenkins, I wrote a Continuous Delivery pipeline, using Jenkins, to automate the deployment process. The pipeline, which was triggered by a push to our master branch, pushed our latest 
+                                            Docker images to JFrog Artifactory, and update our ArgoCD manifest file. ArgoCD would periodically search for new updates to the manifest file, and would deploy the latest version of our application to EKS.
+                                            This pipeline was used by our entire team, and was a huge success, and has automated over <strong>100</strong> major releases to date.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>2</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="#" target="_blank">
+                                    <img src="#" alt="" height="100%" width="100%">
+                                </a>     
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Codebase and Test Suite Enhancements</p>
+                                    <div class="titleCard-title_text">
+                                        <p> In order to deliver more informative error messages to our application developers, we developed a 
+                                            new error handling data type, <code>Try</code>, inspired by Scala. I integrated the <code>Try</code> datatype 
+                                            into our codebase, and over <strong>50</strong> tests within our test suite. This integration reduced the number of instances
+                                            of exception swallowing, which in turn, made for a better developer experience for our application developers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>3</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="#" target="_blank">
+                                    <img src="#" alt="" height="100%" width="100%">
+                                </a>     
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>GraphQL Subscriptions and Web Sockets</p>
+                                    <div class="titleCard-title_text">
+                                        <p>
+                                            For a financial application that runs on the Lodestar runtime, we needed to load financial data like reports and invoices from our API, and display this in real time. 
+                                            To accomplish this, I implemented a GraphQL subscriptions API endpoint, and used a web sockets to push data to the client. 
+                                            This resulted in a real-time data visualization, which enabled our application development team to build process monitors, and web-based invoicing systems.
+                                            Working on this introduced me to GraphQL, web sockets, and nginx reverse proxies. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>4</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="#" target="_blank">
+                                    <img src="#" alt="" height="100%" width="100%">
+                                </a>     
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>Kubernetes Readiness Probe</p>
+                                    <div class="titleCard-title_text">
+                                        <p>
+                                            In order to ensure that our application was always available, we needed to implement a Kubernetes Readiness Probe.
+                                            First, on the backend, I wrote an endpoint that would return a 200 status code if the application was ready to serve traffic.
+                                            Then, I wrote a Kubernetes Readiness Probe that would periodically ping the endpoint, and would only route traffic to the application if the application was ready to serve traffic.
+                                            This ensured that our application was always available to users, and that our application was not overwhelmed by traffic.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sap" hidden = "hidden">
                         <div class="episode">
                             <div class="titleCard-title_index"><p>0</p></div>
                             <div class="titleCard-imageWrapper">
@@ -118,10 +230,11 @@
                                 <div class="titleCardList-title">
                                     <p>Pilot</p>
                                     <div class="titleCard-title_text">
-                                        <p>Introduction: As a Software Engineer Intern at a 
-                                            SAP, I work on the Global Industry and Value Advisory (IVA) team.
-                                            My current project is creating a Go-To-Market strategy application,
-                                            which is currently used by 30+ enterprises and our sales team. 
+                                        <p>Introduction: As a Software Engineer Intern at 
+                                            SAP, I worked on the Digital Modalities team (formerly Global Industry and Value Advisory (IVA)).
+                                            My project was to enhance a Go-To-Market strategy application,
+                                            which is currently used by 30+ enterprises and our sales team. The goal of the project was to 
+                                            create a personalized experience for our customers, and provide them with a tailored recommendations.
                                             Currently, the project has a 5☆ rating from our clients.                                        </p>
                                     </div>
                                 </div>
@@ -140,9 +253,9 @@
                                     <p>Digital Value Discovery</p>
                                     <div class="titleCard-title_text">
                                         <p><a href="https://www.youtube.com/watch?v=xt7ZkP-YrjU" target="_blank">Digital Value Discovery</a> is the name of the web application
-                                            I work on. Through gamification, we aim to create personalized suggestions based on customer challenges and strategic priorities. The application was built using TypeScript across the stack. We use React and Aurelia on the client side, and Node.js and Express on the server side.
+                                            I worked on. Through gamification, SAP aims to create personalized suggestions based on customer challenges and strategic priorities. The application was built using TypeScript across the stack. We use React and Aurelia on the client side, and Node.js and Express on the server side.
                                             We used SAP's multi-model database, SAP HANA, to store user information, and have implemented SSO and IDP for authentication.
-                                            The application integrates multiple SAP products, such as VLM, and S/4 HANA, alongside external APIs (S&P 500 API) to generate metric-based recommendations for enterprises.
+                                            The application integrates multiple SAP products, such as VLM, and S/4 HANA, alongside external APIs (S&P 500 API, etc) to generate metric-based recommendations for enterprises.
                                             The entire application is deployed using SAP Business Technology Platform (BTP).
                                         </p>
                                     </div>
@@ -153,7 +266,28 @@
                         <div class="episode" width = "800px">
                             <div class="titleCard-title_index"><p>2</p></div>
                             <div class="titleCard-imageWrapper">
-                                <a href="https://about.ekta.app/api.html" target="_blank">
+                                <a href="#" target="_blank">
+                                    <img src="#" alt="" height="100%" width="100%">
+                                </a>     
+                            </div>
+                            <div class="titleCardList--metadataWrapper">
+                                <div class="titleCardList-title">
+                                    <p>GPT Pilot Project</p>
+                                    <div class="titleCard-title_text">
+                                        <p>Another project our team took on during my internship was a GPT pilot project. The goal of this project
+                                            was to test a proof of concept for a GPT-based application, which would be used to automate daily tasks involving
+                                            the SAP Suite. Using SAP Analytics Cloud, I create a dashboard to visualize the results of the GPT model, which was 
+                                            eventually presented to the executive leadership, including the C-suite.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="episode" width = "800px">
+                            <div class="titleCard-title_index"><p>3</p></div>
+                            <div class="titleCard-imageWrapper">
+                                <a href="#" target="_blank">
                                     <img src="static/imgs/documentation.jpeg" alt="" height="100%" width="100%">
                                 </a>     
                             </div>
@@ -161,8 +295,8 @@
                                 <div class="titleCardList-title">
                                     <p>Technical Documentation</p>
                                     <div class="titleCard-title_text">
-                                        <p>Additionally, I am also responsible for creating comprehensive technical documentation for our engineering team.
-                                            This has been an incredibly valuable learning experience for me as I'm able to
+                                        <p>Lastly, I was also responsible for creating comprehensive technical documentation for our engineering team.
+                                            This was an incredibly valuable learning experience for me as I was able to
                                             apply my technical knowledge to writing our wiki, enabling a knowledge transfer and 
                                             help promote the project's maintainability.
                                         
@@ -270,8 +404,8 @@
                                     <p>Pilot</p>
                                     <div class="titleCard-title_text">
                                         <p>Introduction: As a Software Engineering Intern at the Clinical and Translational Science Institute,
-                                            I worked with C#, ASP.NET and SQL Server for our core product, and JavaScript, Node.js, and Selenium for our test suite. Additionally, I got a lot of valuable experience working
-                                            with other technologies, such as Jira and Jenkins CI/CD, to name a few. 
+                                            I worked with C#, ASP.NET and SQL Server for our core product, and JavaScript, Node.js, and Selenium for our test suite. 
+                                            Additionally, I got a lot of valuable exposure working with other technologies, such as Jenkins, Jira, and Selenium to name a few. 
                                         </p>
                                     </div>
                                 </div>
@@ -359,7 +493,7 @@
                                         <p>When I joined for the summer, my team had recently made the switch to a 
                                             Test-Driven-Development (TDD) paradigm. I was responsible for automating 
                                             our stage testing, resulting in a faster time to market. Using Selenium and Headless Chrome,
-                                            I was able to get an automated test running for sign-ups, email and text confirmations, etc. 
+                                            I was able to get multiple automated tests running within our suite, to verify sign-ups capabilities, email and text confirmations, etc. 
                                             Additionally, I was able to configure a Cucumber Reports plugin that allowed for
                                             a visual representation of each test, making it easier to spot any errors or bugs.</p>
                                     </div>
@@ -380,7 +514,7 @@
                                     <div class="titleCard-title_text">
                                         <p>Introduction: Within a few weeks of teaching myself the basics of web development, I
                                             managed to land an internship in web development. As my first internship ever, I joined my University's engineering department as a Web Development Intern.
-                                            Along the way, I gained exposure to a lot of new technologies. I made a lot of mistakes, learned from those mistakes, and it made me a better engineer.
+                                            Along the way, I gained exposure to a lot of new technologies. To be honest, I made a lot of mistakes, learned from those mistakes, and it made me a better engineer.
                                         </p>
                                     </div>
                                 </div>
