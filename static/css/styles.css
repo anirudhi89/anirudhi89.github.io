@@ -71,6 +71,7 @@ a:visited {
     max-width: 850px;
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
+    overflow-x: hidden;
     /* background-color: rgb(0,0,0);  */
     /* Fallback color */
     background-color: rgba(0,0,0,0.4); 
@@ -81,7 +82,34 @@ a:visited {
     width: 100%;
     height: 553.19;
     align-items: center;
+    position: relative;
+    display: inline-block;
+}
 
+#resume {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    /* max-height: 42px; */
+    /* min-height: 32px; */
+    width: 118.36px;
+    border-radius: 4px;
+}
+
+.ltr-1vh9doa > a {
+    color: #000000 !important;
+    font-size: 21px;
+}
+
+#resume svg {
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+
+#resume span {
+    display: inline-block;
+    vertical-align: middle; 
 }
 
 .mediaimg {
@@ -91,6 +119,10 @@ a:visited {
     height: 553.19;
     /* width: 50%; */
 
+}
+
+#playbutton {
+    fill: black;
 }
 
 /* Modal Content/Box */
