@@ -91,8 +91,8 @@ a:visited {
     top: 90%;
     left: 10%;
     transform: translate(-50%, -50%);
-    /* max-height: 42px; */
-    /* min-height: 32px; */
+    max-height: 42px;
+    min-height: 32px;
     width: 118.36px;
     border-radius: 4px;
 }
