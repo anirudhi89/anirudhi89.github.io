@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Example project",
+    "description": "A short description of something you built. No links required.",
+    "github": "https://github.com/anirudhi89",
+    "demo": null,
+    "blog": null
+  },
+  {
+    "title": "Another project",
+    "description": "Another featured project. You can link to a blog post, a demo, or nothing at all.",
+    "github": null,
+    "demo": null,
+    "blog": "/blog/example-post/"
+  }
+]
