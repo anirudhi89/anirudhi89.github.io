@@ -19,7 +19,11 @@ module.exports = function (eleventyConfig) {
     "staticformsApiKey",
     process.env.STATICFORMS_API_KEY || ""
   );
-  eleventyConfig.addGlobalData("siteUrl", process.env.SITE_URL || "");
+  const siteUrl =
+    process.env.SITE_URL ||
+    process.env.CF_PAGES_URL ||
+    "http://localhost:8080";
+  eleventyConfig.addGlobalData("siteUrl", siteUrl);
 
   return {
     dir: {
