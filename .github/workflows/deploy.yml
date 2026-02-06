@@ -30,6 +30,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          STATICFORMS_API_KEY: ${{ secrets.STATICFORMS_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

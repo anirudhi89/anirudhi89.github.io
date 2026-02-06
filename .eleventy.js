@@ -1,4 +1,7 @@
+const dotenv = require("dotenv");
+
 module.exports = function (eleventyConfig) {
+  dotenv.config();
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("CNAME");
 
@@ -11,6 +14,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("blog", function (collectionApi) {
     return collectionApi.getFilteredByTag("blog").reverse();
   });
+
+  eleventyConfig.addGlobalData(
+    "staticformsApiKey",
+    process.env.STATICFORMS_API_KEY || ""
+  );
+  eleventyConfig.addGlobalData("siteUrl", process.env.SITE_URL || "");
 
   return {
     dir: {
