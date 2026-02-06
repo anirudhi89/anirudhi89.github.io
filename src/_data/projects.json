@@ -1,16 +1,16 @@
 [
   {
-    "title": "Example project",
-    "description": "A short description of something you built. No links required.",
+    "title": "Coming Soon",
+    "description": "Coming Soon",
     "github": "https://github.com/anirudhi89",
     "demo": null,
     "blog": null
   },
   {
-    "title": "Another project",
-    "description": "Another featured project. You can link to a blog post, a demo, or nothing at all.",
+    "title": "Coming Soon",
+    "description": "Coming Soon",
     "github": null,
     "demo": null,
-    "blog": "/blog/example-post/"
+    "blog": null
   }
 ]

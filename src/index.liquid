@@ -3,9 +3,18 @@ layout: layout.njk
 title: null
 ---
 
+<h1>Hi, I'm Anirudh!</h1>
 <section id="about" class="about">
   <h2>About</h2>
-  <p>Hi, I'm Anirudh. I'm a full stack developer. This is my minimal corner of the web — a place for a short intro, some projects, and occasional writing.</p>
+  <p>I'm a generalist backend engineer with experience across the stack, from DevOps and 
+    infrastructure to databases, data lakes, and distributed systems at scale.
+  </p>
+  <p>
+    Lately, my work has focused on building with AI in mind as a first-class citizen.
+    Building for AI, building with AI, and building AI agents/tools has shaped a new
+    form of engineering practice for me, one where AI is treated as a core part of the
+    system, not an afterthought.
+  </p>
 </section>
 
 <section id="blog" class="blog">
@@ -14,7 +23,7 @@ title: null
     {% for post in collections.blog %}
     <li>
       <h3 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-      <p class="post-meta">{{ post.date | formatDate }}</p>
+      <p class="post-meta">{{ post.data.date | formatDate }}</p>
       {% if post.data.excerpt %}
       <p class="post-preview">{{ post.data.excerpt }}</p>
       {% endif %}
